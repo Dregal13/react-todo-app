@@ -170,10 +170,7 @@ body {
 }
 
 .todo__item--drag {
-  background: pink;
-  position: absolute;
-  left: 0;
-  z-index: 2;
+  background: var(--item-border-color);
 }
 
 .todo__item--hide {

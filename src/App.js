@@ -78,6 +78,7 @@ function App() {
 		const updatedTodos = todos.filter(todo=> !todo.completed);
 		setTodos(updatedTodos);
 		setCurrentTodos(updatedTodos);
+		setFilterType();
 	};
 
 	const filterTodos = (type) => {
@@ -94,6 +95,7 @@ function App() {
 			/>
 			<Content 
 				todos={filterType ? currentTodos : todos}
+				setTodos={setTodos}
 				addTodo={addTodo}
 				completed={completed}
 				deleted={deleted}
