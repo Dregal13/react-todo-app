@@ -41,11 +41,9 @@ function App() {
 
 	const [currentTodos,setCurrentTodos] = useState(todos);
 	const [filterType,setFilterType] = useState();
-	const [theme,setTheme] = useState();
 
-	const toggleDarkMode = (e) => {
-		if(theme)	setTheme();
-		else 	setTheme('theme-light');
+	const toggleDarkMode = () => {
+		document.body.classList.toggle('theme--light');
 	};
 
 	const addTodo = (e) => {
